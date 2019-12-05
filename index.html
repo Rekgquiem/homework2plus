@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>HomeWork</title>
+</head>
+<body>
+
+
+
+    <form action="#" method="post">
+        <fieldset class="for_all_fieldset">
+            <legend>
+                Personal Information
+            </legend>
+
+            <label for="enter_name">
+                Surname:
+            </label>
+
+            <input type="text" name="enter_name" required class="margin_for_all_inputs">
+            <br>
+
+            <label for="enter_surname">
+                Name:
+            </label>
+
+            <input type="text" name="enter_surname" required  class="margin_for_all_inputs">
+            <br>
+
+            <label for="how_old">
+                How old are You?
+            </label>
+
+            <input type="text" name="how_old" minlength="1" maxlength="2"
+            class="margin_for_all_inputs how_old_style">
+            <br>
+
+            <label for="date">
+                Full date of birth:
+            </label>
+
+            <input type="date" name="date" class="margin_for_all_inputs">
+            <br>
+
+            <label for="">
+                I accept the term of the agreement
+            </label>
+
+            <input type="checkbox" required>
+        </fieldset>
+
+
+
+        <form action="#" method="post">
+            <fieldset  class="for_all_fieldset">
+                <legend>
+                    Registration
+                </legend>
+
+                <label for="email">
+                    E-mail:
+                </label>
+
+                <input type="email" name="email" required placeholder="email@example.com"
+                class="margin_for_all_inputs">
+                <br>
+
+                <label for="password">
+                    Password:
+                </label>
+
+                <input type="password" name="password" required>
+            </fieldset>
+
+
+
+            <form action="#" method="get">
+                <fieldset  class="for_all_fieldset">
+                    <legend>
+                        An interesting fact about you!
+                    </legend>
+
+                    <span>
+                        Do you love cats?
+                    </span>
+
+                    <input type="radio" name="cat" id="cat_yes">
+
+                    <label for="cat_yes">
+                        Yes
+                    </label>
+
+                    <input type="radio" name="cat" id="cat_no"
+                    class="margin_for_all_inputs">
+
+                    <label for="cat_no">
+                        No
+                    </label>
+                    <br>
+
+                    <span>
+                        What is your favorite color?
+                    </span>
+
+                    <input type="color" name="color" class="margin_for_all_inputs">
+                    <br>
+
+                    <span>
+                        What time do you go to bed?
+                    </span>
+
+                    <input type="time" class="margin_for_all_inputs">
+                    <br>
+
+                    <span>
+                        What are your favorite brand of cars?
+                    </span>
+
+                    <select multiple class="margin_for_all_inputs">
+                        <option value="BMW" selected>BMW</option>
+                        <option value="BMW">Audi</option>
+                        <option value="BMW">Lada</option>
+                    </select>
+                    <br>
+
+                    <span>
+                        How do you rate our work?
+                    </span>
+
+                    <input type="range">
+                </fieldset>
+
+
+
+                <form action="#" method="post">
+                    <fieldset class="for_all_fieldset">
+                        <legend>
+                            Additional info:
+                        </legend>
+
+                        <span>
+                            Comments:
+                        </span>
+
+                        <textarea name="comment" rows="1" cols="20"></textarea>
+                        <br>
+
+                        <span>
+                            Would you recommend us?
+                        </span>
+
+                        <select name="recommend_us" class="margin_for_select">
+                            <option value="">yes</option>
+                            <option value="">no</option>
+                        </select>
+                    </fieldset>
+                    <input type="submit" value="Submit">
+                </form>
+            </form>
+        </form>
+    </form>
+</body>
+</html>
