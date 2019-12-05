@@ -1,165 +1,151 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>HomeWork</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>HomeWork</title>
 </head>
 <body>
+  <form action="#" method="post">
+    <fieldset class="for_all_fieldset">
+      <legend>
+        Personal Information
+      </legend>
 
+      <label for="enter_name">
+        Surname:
+      </label>
 
+      <input type="text" name="enter_name" required class="margin_for_all_inputs">
+      <br>
 
-    <form action="#" method="post">
-        <fieldset class="for_all_fieldset">
-            <legend>
-                Personal Information
-            </legend>
+      <label for="enter_surname">
+        Name:
+      </label>
 
-            <label for="enter_name">
-                Surname:
-            </label>
+      <input type="text" name="enter_surname" required  class="margin_for_all_inputs">
+      <br>
 
-            <input type="text" name="enter_name" required class="margin_for_all_inputs">
-            <br>
+      <label for="how_old">
+        How old are You?
+      </label>
 
-            <label for="enter_surname">
-                Name:
-            </label>
+      <input type="text" name="how_old" minlength="1" maxlength="2"
+      class="margin_for_all_inputs how_old_style">
+      <br>
 
-            <input type="text" name="enter_surname" required  class="margin_for_all_inputs">
-            <br>
+      <label for="date">
+        Full date of birth:
+      </label>
 
-            <label for="how_old">
-                How old are You?
-            </label>
+      <input type="date" name="date" class="margin_for_all_inputs">
+      <br>
 
-            <input type="text" name="how_old" minlength="1" maxlength="2"
-            class="margin_for_all_inputs how_old_style">
-            <br>
+      <label for="">
+        I accept the term of the agreement
+      </label>
 
-            <label for="date">
-                Full date of birth:
-            </label>
+      <input type="checkbox" required>
+    </fieldset>
 
-            <input type="date" name="date" class="margin_for_all_inputs">
-            <br>
+    <fieldset class="for_all_fieldset">
+      <legend>
+        Registration
+      </legend>
 
-            <label for="">
-                I accept the term of the agreement
-            </label>
+      <label for="email">
+      E-mail:
+      </label>
 
-            <input type="checkbox" required>
-        </fieldset>
+      <input type="email" name="email" required placeholder="email@example.com"
+      class="margin_for_all_inputs">
+      <br>
 
+      <label for="password">
+        Password:
+      </label>
 
+      <input type="password" name="password" required>
+    </fieldset>
 
-        <form action="#" method="post">
-            <fieldset  class="for_all_fieldset">
-                <legend>
-                    Registration
-                </legend>
+    <fieldset class="for_all_fieldset">
+      <legend>
+        An interesting fact about you!
+      </legend>
 
-                <label for="email">
-                    E-mail:
-                </label>
+      <span>
+        Do you love cats?
+      </span>
 
-                <input type="email" name="email" required placeholder="email@example.com"
-                class="margin_for_all_inputs">
-                <br>
+      <input type="radio" name="cat" id="cat_yes">
 
-                <label for="password">
-                    Password:
-                </label>
+      <label for="cat_yes">
+        Yes
+      </label>
 
-                <input type="password" name="password" required>
-            </fieldset>
+      <input type="radio" name="cat" id="cat_no"
+      class="margin_for_all_inputs">
 
+      <label for="cat_no">
+        No
+      </label>
+      <br>
 
+      <span>
+        What is your favorite color?
+      </span>
 
-            <form action="#" method="get">
-                <fieldset  class="for_all_fieldset">
-                    <legend>
-                        An interesting fact about you!
-                    </legend>
+      <input type="color" name="color" class="margin_for_all_inputs">
+      <br>
 
-                    <span>
-                        Do you love cats?
-                    </span>
+      <span>
+        What time do you go to bed?
+      </span>
 
-                    <input type="radio" name="cat" id="cat_yes">
+      <input type="time" class="margin_for_all_inputs">
+      <br>
 
-                    <label for="cat_yes">
-                        Yes
-                    </label>
+      <span>
+        What are your favorite brand of cars?
+      </span>
 
-                    <input type="radio" name="cat" id="cat_no"
-                    class="margin_for_all_inputs">
+      <select multiple class="margin_for_all_inputs">
+      <option value="BMW" selected>BMW</option>
+      <option value="BMW">Audi</option>
+      <option value="BMW">Lada</option>
+      </select>
+      <br>
 
-                    <label for="cat_no">
-                        No
-                    </label>
-                    <br>
+      <span>
+        How do you rate our work?
+      </span>
 
-                    <span>
-                        What is your favorite color?
-                    </span>
+      <input type="range">
+    </fieldset>
 
-                    <input type="color" name="color" class="margin_for_all_inputs">
-                    <br>
+    <fieldset class="for_all_fieldset">
 
-                    <span>
-                        What time do you go to bed?
-                    </span>
+      <legend>
+        Additional info:
+      </legend>
 
-                    <input type="time" class="margin_for_all_inputs">
-                    <br>
+      <span>
+        Comments:
+      </span>
 
-                    <span>
-                        What are your favorite brand of cars?
-                    </span>
+      <textarea name="comment" rows="1" cols="20"></textarea>
+      <br>
 
-                    <select multiple class="margin_for_all_inputs">
-                        <option value="BMW" selected>BMW</option>
-                        <option value="BMW">Audi</option>
-                        <option value="BMW">Lada</option>
-                    </select>
-                    <br>
+      <span>
+        Would you recommend us?
+      </span>
 
-                    <span>
-                        How do you rate our work?
-                    </span>
-
-                    <input type="range">
-                </fieldset>
-
-
-
-                <form action="#" method="post">
-                    <fieldset class="for_all_fieldset">
-                        <legend>
-                            Additional info:
-                        </legend>
-
-                        <span>
-                            Comments:
-                        </span>
-
-                        <textarea name="comment" rows="1" cols="20"></textarea>
-                        <br>
-
-                        <span>
-                            Would you recommend us?
-                        </span>
-
-                        <select name="recommend_us" class="margin_for_select">
-                            <option value="">yes</option>
-                            <option value="">no</option>
-                        </select>
-                    </fieldset>
-                    <input type="submit" value="Submit">
-                </form>
-            </form>
-        </form>
-    </form>
+      <select name="recommend_us" class="margin_for_select">
+      <option value="">yes</option>
+      <option value="">no</option>
+      </select>
+      <input type="submit" value="Submit">
+    </fieldset>
+  </form>
 </body>
 </html>
